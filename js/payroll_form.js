@@ -32,8 +32,12 @@ const save = () => {
 
 const createEmployeePayroll = () => {
     let employeePayrollData = new EmployeePayrollData();
-    
-    employeePayrollData.name = getInputValueById('#name');
+    try {
+        employeePayrollData.name = getInputValueById('#name');
+    } catch (e) {
+        setTextValue('.text-error', e);
+        throw e;
+    }
     employeePayrollData.profilePic = getSelectedValues('[name=profile]').pop();
     employeePayrollData.gender = getSelectedValues('[name=gender]').pop();
     employeePayrollData.department = getSelectedValues('[name=department]');
