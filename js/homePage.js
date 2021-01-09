@@ -17,7 +17,6 @@ const createInnerHtml = () => {
                         "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
     let innerHtml = `${headerHtml}`;
     for(const empPayrollData of empPayrollList){
-        empPayrollData._id = empPayrollList.indexOf(empPayrollData);
     innerHtml = `${innerHtml}
         <tr>
             <td><img class="profile" alt="" src="${empPayrollData._profilePic}"></td>
