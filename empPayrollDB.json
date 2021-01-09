@@ -1,0 +1,41 @@
+{
+    "EmployeePayrollDB": [
+      {
+        "id": 1,
+        "_name": "Ramana",
+        "_gender": "Male",
+        "_department": [
+            "HR",
+            "Sales"
+        ],
+        "_salary": 400000,
+        "_startDate": "29 Dec 2020",
+        "_note": "All In One",
+        "_profilePic": "../assets/profile-images/Ellipse -3.png"
+      },
+      {
+        "id": 2,
+        "_name": "Smriti",
+        "_gender": "Female",
+        "_department": [
+            "Finance"
+        ],
+        "_salary": 323000,
+        "_startDate": "08 Jan 2021",
+        "_note": "Opener",
+        "_profilePic": "../assets/profile-images/Ellipse -1.png"
+      },
+      {
+        "id": 3,
+        "_name": "Rohit",
+        "_gender": "Male",
+        "_department": [
+            "Engineer"
+        ],
+        "_salary": 438000,
+        "_startDate": "20 Dec 2020",
+        "_note": "Hitman",
+        "_profilePic": "../assets/profile-images/Ellipse -2.png"
+      }
+    ]
+  }
