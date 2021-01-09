@@ -17,6 +17,7 @@ const createInnerHtml = () => {
                         "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
     let innerHtml = `${headerHtml}`;
     for(const empPayrollData of empPayrollList){
+        empPayrollData._id = empPayrollList.indexOf(empPayrollData);
     innerHtml = `${innerHtml}
         <tr>
             <td><img class="profile" alt="" src="${empPayrollData._profilePic}"></td>
@@ -54,10 +55,3 @@ const remove = (node) => {
     document.querySelector(".emp-count").textContent = empPayrollList.length;
     createInnerHtml();
 }
-
-const update = (node) => {
-    let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
-    if (!empPayrollData) return;
-    localStorage.setItem('editEmp', JSON.stringify(empPayrollData));
-    window.location.replace(site_properties.add_emp_payroll_page);
-};
